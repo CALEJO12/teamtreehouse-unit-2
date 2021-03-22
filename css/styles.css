@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FCF9F9;
+}
+
+hr {
+    border: 1px solid #E9E9E9;
+}
+
+main {
+    background-color: white;
+}
+
+main h2 {
+    padding: 40px 0px;
+    font-size: .8em;
+    letter-spacing: .05em;
+}
+
+main h3 {
+    padding: 20px 0px 10px 0px;
+    font-size: 1em;
+    letter-spacing: .05em;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding: 5px;
+    letter-spacing: .02em;
+}
+
+h2, h4, h1, h3, p, li {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header p, main p {
+    color: #ABABAB;
+    font-family: "Open Sans", sans-serif;
+}
+/* MAIN HEADER STYLES */
+
+.main-header {
+    background-color: #FCF9F9;
+    padding: 15px 0px;
+}
+
+.header-container nav {
+    padding: 10px 0px 35px;
+}
+
+.profile-image {
+   align-self: center;
+   width: 200px;
+   height: auto;
+}
+
+#nav-item {
+    background-color: white;
+    margin: 5px 15px;
+    list-style-type: none;
+    padding: 12px 0px;
+    font-size: .8em;
+    font-weight: bold;
+    letter-spacing: .05em;
+}
+
+.portfolio-image {
+    margin: 0px 15px;
+}
+
+.contact-container p {
+    padding-bottom: 10px;
+}
+
+.contact-container a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    padding-left: 7px;
+}
+
+.portfolio-container p {
+    padding: 0px 28px 40px 28px;
+    font-size: .9em;
+}
+
+.contact-container p:first-child {
+    padding: 0px 5px 30px;
+}
+
+.main-footer {
+    background-color: #FCF9F9;
+    padding: 50px 15px 0px;
+    margin-top: 50px;
+}
+
+.main-footer h4 {
+    padding-bottom: 30px;
+    font-size: .9em;
+    letter-spacing: 0,25em;
+}
+
+.main-footer .email{
+    padding-bottom: 60px;
+}
+/* FLEX STYLES */
+
+.header-container, .background-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-description {
+    padding: 25px 10px 30px 10px;  
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: FCF9F9;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container h5 { 
+     margin: 30px 0px 30px;
+    font-size: .8em;
+    font-weight: bolder;
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: .05em;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    main {
+        background-color: white;
+    }
+
+    main h2 {
+        font-size: .8em;
+    }
+
+    main h3{
+        font-size: .7em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .background-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .background-container {
+        padding-top: 30px;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 25px 50px;
+    }
+
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-container nav {
+        padding: 20px 0px;
+        align-self: center;
+    }
+
+    #nav-item {
+        font-size: .8em;
+        margin: 0px;
+        padding: 0px 15px;
+        background-color: #FCF9F9;
+    }
+
+    #nav-item:last-child {
+        padding-right: 0px;
+    }
+
+    .profile-description {
+        padding: 0px;
+        order: -1;
+        text-align: left;
+        width: 58%;
+        font-size: 1.25em;
+    }
+
+    .profile-image {
+        width: 40%;
+    }
+
+    .portfolio-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .portfolio-image {
+        width: 355px;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .portfolio-container {
+        align-items: center;
+    }
+
+    .portfolio-container p {
+        padding: 0px 0px 30px;
+        font-size: .8em;
+        width: 230px;
+    }
+
+    .portfolio-container h3 {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .portfolio-main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-container p:first-child {
+        padding: 0px 10px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        margin: 0px 25px;
+        background-color: white;
+    }
+
+    main h2 {
+        font-size: .8em;
+    }
+
+    main h3{
+        font-size: .7em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .header-container, .background-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .background-container {
+        padding-top: 30px;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-container nav {
+        padding: 0px;
+        align-self: center;
+    }
+
+    #nav-item {
+        font-size: .8em;
+        margin: 0px;
+        padding: 0px 15px;
+        background-color: #FCF9F9;
+    }
+
+    #nav-item:last-child {
+        padding-right: 0px;
+    }
+
+    .profile-description {
+        padding: 0px;
+        order: -1;
+        text-align: left;
+        width: 55%;
+        font-size: 1.25em;
+    }
+
+    .profile-image {
+        width: 40%;
+    }
+
+    .portfolio-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .portfolio-image {
+        width: 300px;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .portfolio-container {
+        align-items: center;
+    }
+
+    .portfolio-container p {
+        padding: 0px 0px 30px;
+        font-size: .8em;
+        width: 230px;
+    }
+
+    .portfolio-container h3 {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .portfolio-main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-container p:first-child {
+        padding: 0px 140px 30px;
+    }
+}
