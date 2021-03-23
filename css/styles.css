@@ -95,6 +95,10 @@ h2, h4, h1, h3, p, li {
     padding: 0px 5px 30px;
 }
 
+.main-footer h4 {
+    padding: 0px 0px 30px;
+}
+
 .main-footer {
     background-color: #FCF9F9;
     padding: 50px 15px 0px;
@@ -267,7 +271,7 @@ h2, h4, h1, h3, p, li {
     }
 
     .contact-container p:first-child {
-        padding: 0px 10px 30px;
+        padding: 0px 150px 30px;
     }
 
     .footer-container {
@@ -387,7 +391,7 @@ h2, h4, h1, h3, p, li {
     }
 
     .contact-container p:first-child {
-        padding: 0px 140px 30px;
+        padding: 0px 250px 30px;
     }
 
     .footer-container {
