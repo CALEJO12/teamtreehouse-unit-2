@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -56,7 +57,7 @@ h2, h4, h1, h3, p, li {
 
 .profile-image {
    align-self: center;
-   width: 200px;
+   width: 60%;
    height: auto;
 }
 
@@ -100,7 +101,7 @@ h2, h4, h1, h3, p, li {
     margin-top: 50px;
 }
 
-.main-footer h4 {
+.main-footer h2 {
     padding-bottom: 30px;
     font-size: .9em;
     letter-spacing: 0.25em;
@@ -108,6 +109,25 @@ h2, h4, h1, h3, p, li {
 
 .main-footer .email{
     padding-bottom: 60px;
+}
+
+.footer-container h2 {
+    padding: 0px;
+    letter-spacing: 0px;
+}
+
+.footer-nav {
+    list-style-type: none;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.full {
+    display: none;
 }
 /* FLEX STYLES */
 
@@ -138,15 +158,9 @@ h2, h4, h1, h3, p, li {
 .footer-container {
     display: flex;
     justify-content: space-between;
-}
-
-.footer-container h5 { 
-     margin: 30px 0px 30px;
+    margin: 25px auto;
     font-size: .8em;
-    font-weight: bolder;
-    color: black;
-    font-family: sans-serif;
-    letter-spacing: .05em;
+    font-weight: bold;
 }
 
 /* MEDIA QUERIES */
@@ -220,13 +234,15 @@ h2, h4, h1, h3, p, li {
     .portfolio-main {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center
+        justify-content: center;
     }
 
     .portfolio-image {
         width: 355px;
+        height: auto;
         margin: 0px;
         padding: 5px;
+
     }
 
     .portfolio-container {
@@ -247,10 +263,27 @@ h2, h4, h1, h3, p, li {
     .portfolio-main-container {
         display: flex;
         flex-direction: column;
+        width: 100%;   
     }
 
     .contact-container p:first-child {
         padding: 0px 10px 30px;
+    }
+
+    .footer-container {
+        margin: 25px auto 60px;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .full {
+        display: inline-block;
+    }
+
+    .full a {
+        margin-left: 20px;
     }
 }
 
@@ -355,5 +388,9 @@ h2, h4, h1, h3, p, li {
 
     .contact-container p:first-child {
         padding: 0px 140px 30px;
+    }
+
+    .footer-container {
+        margin: 25px auto;
     }
 }
