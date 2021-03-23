@@ -51,6 +51,12 @@ h2, h4, h1, h3, p, li {
     padding: 15px 0px;
 }
 
+.header-container li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
 .header-container nav {
     padding: 10px 0px 35px;
 }
@@ -242,7 +248,7 @@ h2, h4, h1, h3, p, li {
     }
 
     .portfolio-image {
-        width: 355px;
+        width: 100%;
         height: auto;
         margin: 0px;
         padding: 5px;
@@ -251,6 +257,7 @@ h2, h4, h1, h3, p, li {
 
     .portfolio-container {
         align-items: center;
+        flex-basis: calc(50% - 20px);
     }
 
     .portfolio-container p {
@@ -365,13 +372,14 @@ h2, h4, h1, h3, p, li {
     }
 
     .portfolio-image {
-        width: 300px;
+        width: 100%;
         margin: 0px;
         padding: 5px;
     }
 
     .portfolio-container {
         align-items: center;
+        flex-basis: calc(34% - 20px);
     }
 
     .portfolio-container p {
